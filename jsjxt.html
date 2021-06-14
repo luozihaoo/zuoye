@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>计算机系统I</title>
+     <style type = "text/css"> @import "dock.css"</style>
+     <style>
+  .body{
+      
+             background-color: black;
+            background-image:url("photo/4.jpg");
+         }
+   .self{
+         height:1500px;
+         position: absolute;
+         margin: auto;
+         left: 0;
+         right: 0;
+         background-color:white;
+            /* background-color:rgba(247,238,238,0.93);*/
+             filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
+         width: 967px;
+             border-radius: 2%;
+
+     }
+    .eaasy{
+        width:900px;
+        height: 200px;
+        position: absolute;
+         margin: auto;
+         left: 0;
+         right: 0;
+         background-color:white;
+         border-radius: 3%;
+         }
+         .clear{
+             clear:both;
+         }
+    </style>
+</head>
+
+<body  class="body">
+    <div class="self"><h2 style="text-align: center">计算机系统I</h2>
+    <p style="text-align: right;font-family: 楷体"></p><br><br><br>
+</p></div><br><br><br><br><br><br>
+     <div class="eaasy"  style="text-align: center"><h2>数据的机器级表示与处理</h2><p style="text-align: left;font-family: 楷体">
+        主要论述数据在计算机内部的机器级表示及基本处理方式。主要内容包括：进位计数制、二进制定点数的编码表示、无符号整数和带符号整数的
+        表示、IEEE 754浮点数表示标准、西文字符和汉字的编码表示、十进制数的二进制编码表示（即BCD码）、C语言中各种类型数据的表示和转换、
+        数据的宽度和存放顺序、基本运算及其运算电路。</p></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy"  style="text-align: center"><h2>程序的链接</h2><p style="text-align: left;font-family: 楷体">
+        静态链接：在程序运行之前，先将各目标模块及它们所需的库函数链接成一个完整的可执行程序，以后不再拆开。装入时动态链接：
+        将用户源程序编译后所得到的一组目标模块，在装入内存时，釆用边装入边链接的链接方式。运行时动态链接：对某些目标模块的链接，
+        是在程序执行中需要该目标模块时，才对它进行的链接。其优点是便于修改和更新，便于实现对目标模块的共享。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy"  style="text-align: center"><h2>程序的执行</h2><p style="text-align: left;font-family: 楷体">
+        开始执行程序时，必须先给程序计数器PC赋以第一条指令的首地址00H，然后就进入第一条指令的取令的取指令阶段。第一条指令的执行
+        过程：取指令阶段：①将程序计数器PC的内容（00H）送至地址寄存器AR，记为PC AR。②程序计数器PC的内容自动加1变为01H，为取下一个
+        指令字节作准备，记为PC+1 PC。③地址寄存器AR将00H通过地址总线送至存储器，经地址译码器译码，选中00号单元，记为AR M。④CPU发出
+        "读"命令。⑤所选中的00号单元的内容B0H读至数据总线DB，记为（00H） DB。⑥经数据总线DB，将读出的B0H送至数据寄存器，记为DB DR。
+        ⑦数据寄存器DR将其内容送至指令寄存器IR，经过译码，控制逻辑发出招待该条指令的一系列控制信号，记为DR IR，IR ID、PLA。经过译码，
+        CPU"识别"出这个操作码就是MOV A，03指令，于是，它"通知"控制器发出执行这条指令的各种控制命令。</p></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>层次结构存储系统</h2><p style="text-align: left;font-family: 楷体">
+        存储层次是在计算机体系结构下存储系统层次结构的排列顺序。每一层于下一层相比都拥有较高的速度和较低延迟性，以及较小的容量。
+        大部分现今的中央处理器的速度都非常的快。大部分程序工作量需要存储器访问。由于高速缓存的效率和存储器传输位于层次结构中的不
+        同档次，所以实际上会限制处理的速度，导致中央处理器花费大量的时间等待存储器I/O完成工作。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>异常控制流</h2><p style="text-align: left;font-family: 楷体">
+        1、控制转移：从ak到ak+1指令的过渡。2、异常控制流（Exceptional Control Flow， ECF）：现代操作系统通过使控制流发生
+        突变来对系统状态做出反应。3、ECF是操作系统用来实现I/O、进程和虚拟存器的基本机制，是计算机系统中实现并发的基本机制。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>I/O操作的实现</h2><p style="text-align: left;font-family: 楷体">
+        I/O操作主要指的是使用java进行输入，输出操作。Java所有的I/O机制都是基于数据流进行输入输出，这些数据流标识了字符或者字节的
+        流动序列。Java.io是面向数据流的输入输出的主要软件包。此外java也对块传输提供支持，在核心库Java.nio 中采用的便是块IO. 流IO
+        的好处是简单易用，缺点是效率比较低。块IO的效率很高，但是编程上稍微复杂。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+    
+</body>
+</html>

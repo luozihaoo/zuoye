@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数据库</title>
+     <style type = "text/css"> @import "dock.css"</style>
+     <style>
+  .body{
+      
+             background-color: black;
+            background-image:url("photo/3.jpg");
+         }
+   .self{
+         height:2000px;
+         position: absolute;
+         margin: auto;
+         left: 0;
+         right: 0;
+         background-color:white;
+            /* background-color:rgba(247,238,238,0.93);*/
+             filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
+         width: 967px;
+             border-radius: 2%;
+
+     }
+    .eaasy{
+        width:900px;
+        height: 200px;
+        position: absolute;
+         margin: auto;
+         left: 0;
+         right: 0;
+         background-color:white;
+         border-radius: 3%;
+         }
+         .clear{
+             clear:both;
+         }
+    </style>
+</head>
+
+<body  class="body">
+    <div class="self"><h2 style="text-align: center">数据库原理</h2>
+        </p><br><br><br>
+</p></div><br><br><br><br><br><br>
+     <div class="eaasy"  style="text-align: center"><h2>关系数据库</h2><p style="text-align: left;font-family: 楷体"> 
+        关系数据库，是建立在关系数据库模型基础上的数据库，借助于集合代数等概念和
+        方法来处理数据库中的数据，同时也是一个被组织成一组拥有正式描述性的表格，该形式的表格作
+        用的实质是装载着数据项的特殊收集体，这些表格中的数据能以许多不同的方式被存取或重新召集而
+        不需要重新组织数据库表格。关系数据库的定义造成元数据的一张表格或造成表格、列、范围和约束的
+        正式描述。每个表格（有时被称为一个关系）包含用列表示的一个或更多的数据种类。每行包含一个唯一
+        的数据实体，这些数据是被列定义的种类。当创造一个关系数据库的时候，你能定义数据列的可能值的范围
+        和可能应用于那个数据值的进一步约束。而SQL语言是标准用户和应用程序到关系数据库的接口。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" style="text-align: center"><h2>数据库安全性</h2><p style="text-align: left;font-family: 楷体">
+        数据库系统的安全特性主要是针对数据而言的，包括数据独立性、数据安全性、数据完整性、并发控制、故障恢复等几个方面。
+        数据库安全的防护技术有：数据库加密（核心数据存储加密）、数据库防火墙（防漏洞、防攻击）、数据脱敏（敏感数据匿名化）等。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy"  style="text-align: center"><h2>数据库完整性</h2><p style="text-align: left;font-family: 楷体">
+        数据库完整性（Database Integrity）是指数据库中数据在逻辑上的一致性、正确性、有效性和相容性。数据库
+        完整性由各种各样的完整性约束来保证，因此可以说数据库完整性设计就是数据库完整性约束的设计。数据库完整
+        性约束可以通过DBMS或应用程序来实现，基于DBMS的完整性约束作为模式的一部分存入数据库中。通过DBMS实现的
+        数据库完整性按照数据库设计步骤进行设计，而由应用软件实现的数据库完整性则纳入应用软件设计。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>数据库设计</h2><p style="text-align: left;font-family: 楷体">
+        数据库设计(Database Design)是指对于一个给定的应用环境，构造最优的数据库模式，建立数据库及其应用系统，
+        使之能够有效地存储数据，满足各种用户的应用需求（信息要求和处理要求）。在数据库领域内，常常把使用数据库
+        的各类系统统称为数据库应用系统。数据库设计的设计内容包括：需求分析、概念结构设计、逻辑结构设计、物理结构
+        设计、数据库的实施和数据库的运行和维护。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>并发控制</h2><p style="text-align: left;font-family: 楷体">
+        数据库管理系统（DBMS）中的并发控制的任务是确保在多个事务同时存取数据库中同一数据时不破坏事务的隔离性和统一性以及数据库的统一性。
+        下面举例说明并发操作带来的数据不一致性问题：现有两处火车票售票点，同时读取某一趟列车车票数据库中车票余额为X。两处售票点同时卖出
+        一张车票，同时修改余额为X -1写回数据库，这样就造成了实际卖出两张火车票而数据库中的却记录只少了一张。产生这种情况的原因是因为两个
+        事务读入同一数据并同时修改，其中一个事务提交的结果破坏了另一个事务提交的结果，导致其数据的修改被丢失，破坏了事务的隔离性。并发控
+        制要解决的就是这类问题。封锁、时间戳、乐观并发控制、悲观并发控制、多版本和快照隔离是并发控制主要采用的技术手段。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>数据库管理系统</h2><p style="text-align: left;font-family: 楷体">
+        数据库管理系统(Database Management System)是一种操纵和管理数据库的大型软件，用于建立、使用和维护数据库，简称DBMS。它对数据库进行
+        统一的管理和控制，以保证数据库的安全性和完整性。用户通过DBMS访问数据库中的数据，数据库管理员也通过DBMS进行数据库的维护工作。它可以
+        支持多个应用程序和用户用不同的方法在同时或不同时刻去建立，修改和询问数据库。大部分DBMS提供数据定义语言DDL（Data Definition Language）
+        和数据操作语言DML（Data Manipulation Language），供用户定义数据库的模式结构与权限约束，实现对数据的追加、删除等操作。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>内存数据库系统</h2><p style="text-align: left;font-family: 楷体">
+        内存数据库，顾名思义就是将数据放在内存中直接操作的数据库。相对于磁盘，内存的数据读写速度要高出几个数量级，将数据保存在内存中相比
+        从磁盘上访问能够极大地提高应用的性能。抛弃了磁盘数据管理的传统方式，基于全部数据都在内存中重新设计了体系结构，并且在数据缓存、快速
+        算法、并行操作方面也进行了相应的改进，所以数据处理速度比传统数据库的数据处理速度要快很多，一般都在10倍以上。内存数据库的最大特点是
+        其“主拷贝”或“工作版本”常驻内存，即活动事务只与实时内存数据库的内存拷贝打交道。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="eaasy"  style="text-align: center"><h2>数据仓库与联机分析处理技术</h2><p style="text-align: left;font-family: 楷体">
+        计算机系统中存在两类不同数据处理工作：操作型处理和分析型处理，也称联机事务处理（OLTP）和联机分析处理（OLAP）操作型也叫事务处理，
+        通常是对一个或一组记录的查询和修改。分析型指对数据的查询和分析操作，通常是对海量数据查询和分析，要访问的数据量很大。因此诞生了DW
+        数据仓库，数据仓库将操作型和分析型区分开来。传统的数据库技术为操作型处理服务，DW为分析型处理服务。</p></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+    
+</body>
+</html>
